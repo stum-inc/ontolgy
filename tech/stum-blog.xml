@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:stum="https://stum.fr/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <stum:output rdf:about="https://stum.fr/websiteFiles">
+    <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty is low because website files are easily accessible by someone that had modified it </stum:Access_difficulty_desc>
+    <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">html, js , php, python, rb files</stum:example>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website files</rdfs:label>
+    <stum:can_be_used_with rdf:resource="https://https://stum.fr/.fr/algorithm/webserver"/>
+    <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["files"]</stum:Data_model>
+    <stum:can_be_extracted_with_task rdf:resource="https://https://stum.fr/.fr/algorithm/scp"/>
+    <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:Access_difficulty>
+    <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All the file that compose the website and that has been created/modified</rdfs:description>
+    <stum:can_be_extracted_with_task rdf:resource="https://https://stum.fr/.fr/algorithm/git"/>
+  </stum:output>
+  <rdf:Description rdf:about="https://stum.fr/blog">
+    <stum:output rdf:resource="https://stum.fr/websiteUrl"/>
+    <stum:optionalInput>
+      <stum:input rdf:about="https://stum.fr/websiteHostingCredentials">
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosting credentials that allow to host website</rdfs:description>
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty depends on the cloud provider or the security measures and should not be too high</stum:Access_difficulty_desc>
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud providers such as AWS, OVH, DIGITALOCEAN or server on premise</stum:example>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</stum:Access_difficulty>
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["credentials"]</stum:Data_model>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website hosting credentials</rdfs:label>
+      </stum:input>
+    </stum:optionalInput>
+    <stum:optionalInput>
+      <stum:input rdf:about="https://stum.fr/wordpressThemeUrl">
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["url"]</stum:Data_model>
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty is low because this input is selected by the user and is hosted by wordpress</stum:Access_difficulty_desc>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:Access_difficulty>
+        <stum:example rdf:resource="https//fr.wordpress.org/themes/twentytwenty/"/>
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This url is associated with an wordpress theme </rdfs:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wordpress theme url</rdfs:label>
+        <stum:can_be_extracted_with_task rdf:resource="https://stum.fr/wordpressThemeCreation"/>
+      </stum:input>
+    </stum:optionalInput>
+    <stum:optionalSkill>
+      <stum:skill rdf:about="https://stum.fr/websiteSecurity">
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">able to update website component, to setup a firewall</rdfs:description>
+        <stum:is_sub_skill_of rdf:resource="https://stum.fr/Security"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website security</rdfs:label>
+      </stum:skill>
+    </stum:optionalSkill>
+    <stum:Estimated_time_max rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1h</stum:Estimated_time_max>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blogCreation</rdfs:label>
+    <stum:input>
+      <stum:input rdf:about="https://stum.fr/webSiteDescription">
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty is low because this input is given and created only by the user.</stum:Access_difficulty_desc>
+        <stum:can_be_extracted_with_task rdf:resource="https://stum.fr/brainstorm"/>
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["text"]</stum:Data_model>
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe a website with few sentences, whitout ambiguous or contradictory sentences.</rdfs:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website description</rdfs:label>
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A blog to host my apple pie pictures</stum:example>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:Access_difficulty>
+        <stum:can_be_used_with rdf:resource="https://https://stum.fr/.fr/algorithm/transformers"/>
+      </stum:input>
+    </stum:input>
+    <stum:output rdf:resource="https://stum.fr/websitefiles"/>
+    <owl:SameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wordpressCreation</owl:SameAs>
+    <stum:input>
+      <stum:input rdf:about="https://stum.fr/themeColor">
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty is low because this input is given and created only by the user.</stum:Access_difficulty_desc>
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This define the overall colors of the website</rdfs:description>
+        <stum:can_be_extracted_with_task rdf:resource="https://stum.fr/brainstorm"/>
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it can be a set of colors or a color "blue"</stum:example>
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["set_of_colors","color"]</stum:Data_model>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theme color</rdfs:label>
+        <stum:can_be_extracted_with_task rdf:resource="https://stum.fr/colorDesign"/>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:Access_difficulty>
+      </stum:input>
+    </stum:input>
+    <stum:optionalInput>
+      <stum:input rdf:about="https://stum.fr/domainProviderCredentials">
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosting credentials that allow to handle  redirections associated with a domain name</rdfs:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain provider credentials</rdfs:label>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</stum:Access_difficulty>
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud providers such as AWS, OVH, DIGITALOCEAN</stum:example>
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["credentials","domain_name"]</stum:Data_model>
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty depends on the cloud provider</stum:Access_difficulty_desc>
+      </stum:input>
+    </stum:optionalInput>
+    <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creation of a blog for internet publication. Not including hosting nor reccurent costs.</rdfs:description>
+    <stum:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</stum:version>
+    <stum:Estimated_time_min rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5mn</stum:Estimated_time_min>
+    <stum:optionalSkill>
+      <stum:skill rdf:about="https://stum.fr/WordpressSetup">
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snapshot of the screen of a computer or other electronic device</rdfs:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wordpress setup</rdfs:label>
+        <stum:is_sub_skill_of rdf:resource="https://stum.fr/wordpress"/>
+      </stum:skill>
+    </stum:optionalSkill>
+    <stum:optionalInput>
+      <stum:input rdf:about="https://stum.fr/databaseProviderCredentials">
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud providers such as AWS, OVH, DIGITALOCEAN or server on premise</stum:example>
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosting credentials that allow to handle  redirections associated with a domain name</rdfs:description>
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["credentials"]</stum:Data_model>
+        <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The difficulty depends on the cloud provider or the security measures and should not be too high</stum:Access_difficulty_desc>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database provider credentials</rdfs:label>
+        <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</stum:Access_difficulty>
+      </stum:input>
+    </stum:optionalInput>
+    <stum:Estimated_cost rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50</stum:Estimated_cost>
+    <stum:optionalInput rdf:resource="https://stum.fr/domainName"/>
+    <stum:input rdf:resource="https://stum.fr/siteTitle"/>
+    <stum:optionalOutput rdf:resource="https://stum.fr/DBfiles"/>
+    <stum:optionalOutput rdf:resource="https://stum.fr/screenshots"/>
+    <stum:task_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:task_id>
+    <stum:constraint>
+      <stum:constraint rdf:about="https://stum.fr/WebPagesCount">
+        <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["int"]</stum:Data_model>
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the number of different pages that the website have </rdfs:description>
+        <stum:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</stum:example>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">web pages count </rdfs:label>
+      </stum:constraint>
+    </stum:constraint>
+    <stum:optionalSkill>
+      <stum:skill rdf:about="https://stum.fr/websiteBlogDesign">
+        <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">able to create/modify the website design components</rdfs:description>
+        <stum:is_sub_skill_of rdf:resource="https://stum.fr/design"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website blog design</rdfs:label>
+      </stum:skill>
+    </stum:optionalSkill>
+  </rdf:Description>
+  <stum:optional_output rdf:about="https://stum.fr/screenshot">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">screenshot</rdfs:label>
+    <stum:example rdf:resource="https//www.wikidata.org/wiki/Q208594"/>
+    <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["image"]</stum:Data_model>
+    <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snapshot of the screen of a computer or other electronic device</rdfs:description>
+  </stum:optional_output>
+  <stum:output rdf:about="https://stum.fr/publicWebsiteUrl">
+    <stum:Access_difficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</stum:Access_difficulty>
+    <stum:Data_model rdf:datatype="http://www.w3.org/2001/XMLSchema#string">["url"]</stum:Data_model>
+    <stum:example rdf:resource="https//stum.fr"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public website url</rdfs:label>
+    <stum:Access_difficulty_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">only need an internet connexion</stum:Access_difficulty_desc>
+    <rdfs:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">named url that can be accessed from the internet </rdfs:description>
+  </stum:output>
+</rdf:RDF>
