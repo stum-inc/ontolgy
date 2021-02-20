@@ -6,29 +6,23 @@
     }
   "Input_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
+      "type":"UML diagram",
+      "description":"standard diagram to show relation in a database, see https://en.wikipedia.org/wiki/Unified_Modeling_Language ",
+      "QA":"All attributes are typed (integer,string...)",
       "Example":""
     },
     {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
+      "type":"Django version",
+      "description":"the ouput must work under this code version",
+      "QA":"Higher version is better",
+      "Example":"[1.8,1.10,3.2]"
     }
   ],
   "Output_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
-    },
-    {
-      "type":"",
-      "description":"",
-      "QA":"",
+      "type":"Python file",
+      "description":"Models django python file, more details here https://docs.djangoproject.com/en/3.1/topics/db/models/",
+      "QA":"python makemigration; python migrate do not show errors",
       "Example":""
     }
   ],
