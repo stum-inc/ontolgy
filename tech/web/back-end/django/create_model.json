@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title":"title",
-    "description":"description",
+    "title":"create django model",
+    "description":"Convert a model description to a django python model file ",
     "version":"1.0"
-    }
+    },
   "Input_data":[
     {
-      "type":"UML diagram",
-      "description":"standard diagram to show relation in a database, see https://en.wikipedia.org/wiki/Unified_Modeling_Language ",
+      "type":"UML diagram or text ",
+      "description":"Standard diagram or text that explain relations and attributes in the model, see https://en.wikipedia.org/wiki/Unified_Modeling_Language ",
       "QA":"All attributes are typed (integer,string...)",
-      "Example":""
+      "Example":"https://github.com/stum-inc/ontology/examples/django-create-model-input.py"
     },
     {
       "type":"Django version",
@@ -23,8 +23,7 @@
       "type":"Python file",
       "description":"Models django python file, more details here https://docs.djangoproject.com/en/3.1/topics/db/models/",
       "QA":"python makemigration; python migrate do not show errors",
-      "Example":""
+      "Example":"https://github.com/stum-inc/ontology/examples/django-create-model-output.py"
     }
-  ],
-
+  ]
 }
