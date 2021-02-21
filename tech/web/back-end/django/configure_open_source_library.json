@@ -1,33 +1,27 @@
 {
   "meta": {
-    "title":"title",
-    "description":"description",
+    "title":"Configure open source library",
+    "description":"Configure open source library in a django application",
     "version":"1.0"
   },
   "Input_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
+      "type":"Django settings file",
+      "description":"Django settings file, where all the important attributes must be defined",
+      "QA":"A good settings file do not have hard coded values such as secret keys.",
       "Example":""
     },
     {
-      "type":"",
-      "description":"",
+      "type":"Url of the open source library",
+      "description":"Url of the open source library, it can be a github link or a pypi link",
       "QA":"",
-      "Example":""
+      "Example":"https://github.com/paul-wolf/djaq"
     }
   ],
   "Output_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
-    },
-    {
-      "type":"",
-      "description":"",
+      "type":"Django setting file, configured with the open source library",
+      "description":"Django setting file, configured with the open source library.",
       "QA":"",
       "Example":""
     }
