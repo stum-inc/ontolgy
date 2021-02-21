@@ -2,7 +2,9 @@
   "meta": {
     "title":"Configuration production settings",
     "description":"Before deploying your django back-end in production you need to configure it for safety and performance. A checklist such as https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/ will be configure for your django project.",
-    "version":"1.0"
+    "version":"1.0",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/back-end/django/configure_prod_settings.json"
+
   },
   "Input_data":[
     {

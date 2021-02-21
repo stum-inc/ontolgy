@@ -2,32 +2,22 @@
   "meta": {
     "title":"title",
     "description":"description",
-    "version":"1.0"
+    "version":"1.0",
+    "url":"https://github.com/stum-inc/ontology"
   },
   "Input_data":[
     {
-      "type":"",
-      "description":"",
+      "type":"test_input",
+      "description":"test_description",
       "QA":"",
       "Example":""
     },
-    {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
-    }
+
   ],
   "Output_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
-    },
-    {
-      "type":"",
-      "description":"",
+      "type":"test_output",
+      "description":"test_description",
       "QA":"",
       "Example":""
     }

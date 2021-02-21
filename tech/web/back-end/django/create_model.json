@@ -2,7 +2,8 @@
   "meta": {
     "title":"create django model",
     "description":"Convert a model description to a django python model file ",
-    "version":"1.0"
+    "version":"1.0",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/back-end/django/configure_prod_settings.json"
     },
   "Input_data":[
     {
