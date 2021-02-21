@@ -1,33 +1,27 @@
 {
   "meta": {
-    "title":"title",
-    "description":"description",
+    "title":"Configuration production settings",
+    "description":"Before deploying your django back-end in production you need to configure it for safety and performance. A checklist such as https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/ will be configure for your django project.",
     "version":"1.0"
   },
   "Input_data":[
     {
-      "type":"",
-      "description":"",
-      "QA":"",
-      "Example":""
-    },
-    {
-      "type":"",
-      "description":"",
-      "QA":"",
+      "type":"Django settings file",
+      "description":"Django settings file, where all the important attributes must be defined",
+      "QA":"A good settings file do not have hard coded values such as secret keys.",
       "Example":""
     }
   ],
   "Output_data":[
     {
-      "type":"",
-      "description":"",
+      "type":"Django settings file, production ready",
+      "description":"Django settings file, where all the important attributes are properly defined according to the https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/ and are not hard coded.",
       "QA":"",
       "Example":""
     },
     {
-      "type":"",
-      "description":"",
+      "type":"Environement file example",
+      "description":"All the attribute value defined in the django settings file must be defined in a separate file. This is a example of the file.",
       "QA":"",
       "Example":""
     }
