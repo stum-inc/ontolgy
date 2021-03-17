@@ -3,7 +3,6 @@
     "uid":"create_django_model_from_uml_file",
     "title":"create django model from uml file",
     "description":"Convert a model description to a Django python model file ",
-    "version":"1.0",
     "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/back-end/django/configure_prod_settings.json"
     },
   "Input_data":[

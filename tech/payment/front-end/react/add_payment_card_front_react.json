@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "uid":"add_payment_card_front_react",
+    "title":"Add payment card front react",
+    "description":"Adding payment for a react page. The outputed code will allow the app to send the needed information to the back-end part.",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/payment/back-end/django/simple_payment_django.json"
+    },
+    "Input_data":[
+      {
+        "type":"Payment provider",
+        "description":"examples can be found here 'https://raw.githubusercontent.com/stum-inc/ontology/master/examples/payment_provider_example.json' ",
+        "QA":"",
+        "Example":""
+      },
+      {
+        "type":"code",
+        "description":"This is the code that will be changed by the stummer.",
+        "QA":"",
+        "Example":""
+      },
+
+    ],
+    "Output_data":[
+      {
+        "type":"code",
+        "description":"Code with the payment api integrated.",
+        "QA":"",
+        "Example":""
+      },
+      {
+        "type":"Image",
+        "description":"Screen shot of the integrated solution.",
+        "QA":"",
+        "Example":""
+      },
+    ]
+  }

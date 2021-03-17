@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "uid":"",
+    "title":"",
+    "description":"",
+    "url":""
+    },
+  "Input_data":[
+    {
+      "type":"",
+      "description":" ",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"",
+      "description":" ",
+      "QA":"",
+      "Example":""
+    },
+  ],
+  "Output_data":[
+    {
+      "type":"",
+      "description":" ",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"",
+      "description":" ",
+      "QA":"",
+      "Example":""
+    },
+  ]
+}
