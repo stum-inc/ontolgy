@@ -1,7 +1,8 @@
 {
   "meta": {
-    "title":"Configure open source library",
-    "description":"Configure open source library in a django application",
+    "uid":"configure_an_open_source_library_django",
+    "title":"Configure an open source library Django",
+    "description":"Configure an open source library in a django application",
     "version":"1.0",
     "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/back-end/django/configure_open_source_library.json"
   },
