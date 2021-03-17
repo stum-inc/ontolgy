@@ -7,7 +7,7 @@
   },
   "Input_data": [{
       "type": "Payment provider",
-      "description": "examples can be found here 'https://raw.githubusercontent.com/stum-inc/ontology/master/examples/payment_provider_example.json' ",
+      "description": "examples can be found here: https://raw.githubusercontent.com/stum-inc/ontology/master/examples/payment_provider_example.json ",
       "QA": "",
       "Example": ""
     },
