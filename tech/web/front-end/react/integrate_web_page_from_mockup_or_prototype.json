@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "uid":"integrate_web_page_from_mockup_or_prototype",
+    "title":"Integrate web page from mockup or prototype",
+    "description":"Convert a design document such as a mockup or a prototype to a react page ",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/front-end/react/integrate_web_page_from_mockup_or_prototype.json"
+    },
+  "Input_data":[
+    {
+      "type":"design_file",
+      "description":"mockup or prototype that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    }
+  ],
+  "Output_data":[
+    {
+      "type":"react-code",
+      "description":"integrated page that respect the wireframe or prototype design and layout.",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"image",
+      "description":"Preview image of the integrated page.",
+      "QA":"",
+      "Example":""
+    }
+  ]
+}

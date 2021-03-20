@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "uid":"create_logo_from_ideas",
+    "title":"Create Logo from ideas",
+    "description":"Create your app logo from a description of your ideas.",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/design/images/create_logo_from_ideas.json"
+    },
+  "Input_data":[
+    {
+      "type":"text",
+      "description":"ideas, use case of your application",
+      "QA":"",
+      "Example":""
+    }
+
+  ],
+  "Output_data":[
+    {
+      "type":"design_file",
+      "description":"logo that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"image",
+      "description":"Preview image of the logo",
+      "QA":"",
+      "Example":""
+    }
+  ]
+}

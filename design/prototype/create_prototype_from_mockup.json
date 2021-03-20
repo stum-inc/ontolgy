@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "uid":"create_prototype_from_mockup",
+    "title":"create prototype from mockup",
+    "description":"Create your app prototype from mockup",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/design/prototype/create_prototype_from_mockup.json"
+    },
+  "Input_data":[
+    {
+      "type":"design_file",
+      "description":"mockup that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    }
+  ],
+  "Output_data":[
+    {
+      "type":"design_file",
+      "description":"prototype that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"image",
+      "description":"Preview image of the prototype",
+      "QA":"",
+      "Example":""
+    }
+  ]
+}

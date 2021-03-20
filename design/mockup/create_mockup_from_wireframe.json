@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "uid":"create_mockup_from_wireframe",
+    "title":"create mockup from wireframe",
+    "description":"Create your app mockup from a wireframe",
+    "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/design/mockup/create_mockup_from_wireframe.json"
+    },
+  "Input_data":[
+    {
+      "type":"design_file",
+      "description":"wireframe that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    }
+  ],
+  "Output_data":[
+    {
+      "type":"design_file",
+      "description":"wireframe that can be edited with specific software ",
+      "QA":"",
+      "Example":""
+    },
+    {
+      "type":"image",
+      "description":"Preview image of the mockup(s)",
+      "QA":"",
+      "Example":""
+    }
+  ]
+}
