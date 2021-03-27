@@ -1,0 +1,61 @@
+{
+    "meta": {
+      "uid":"create_api_endpoint_with_djangorestframework",
+      "title":"Create API endpoint in django app from functional description, supported by DjangoRestFramework",
+      "description":"Implement endpoint in a django app to allow specific actions django objects (GET, UPDATE, POST, DELETE), without authorization management.",
+      "url":"https://raw.githubusercontent.com/stum-inc/ontology/master/tech/web/back-end/django/create_api_endpoints.json"
+      },
+    "Input_data":[
+      {
+        "type":"Text",
+        "description":"Endpoint name / url",
+        "QA":"At at least: fields/data to return in case of success/error, action on django object, related django app name (if many)",
+        "Example":"/invoices"
+      },
+      {
+        "type":"text",
+        "description":"Action",
+        "QA":"Description of the action on the django object",
+        "Example":"When calling GET, the endpoint shall return all the fields of the object."
+      },
+      {
+        "type":"text",
+        "description":"Error management",
+        "QA":"Description of what happens if action cannot be performed",
+        "Example":"When calling GET and object does not exists, or internal error occured, return http code 500 without message."
+      },
+      {
+        "type":"source code / git repo",
+        "description":"Github repository",
+        "QA":"link to drive or github repository or .zip",
+        "Example":"https://github.com/stum-inc/ontology"
+      },
+      {
+        "type":"text",
+        "description":"Django app name",
+        "QA":"name of an app that is in the Django project in the repository",
+        "Example":"Test App"
+      },
+      {
+        "type":"REST type",
+        "description":"Type of http request",
+        "QA":"['GET', 'POST', 'UPDATE', 'DELETE']",
+        "Example":"GET"
+      },
+      {
+        "type":"Django version",
+        "description":"the ouput must work under this code version",
+        "QA":"Higher version is better",
+        "Example":"[1.8,1.10,3.2]"
+      }
+    ],
+    "Output_data":[
+      {
+        "type":"source code files (views.py, serializers.py, models.py)",
+        "description":"Working API for the object, more details here https://www.django-rest-framework.org/",
+        "QA":"all interactions with the objects ",
+        "Example":"https://github.com/stum-inc/ontology/examples/django-create-model-output.py"
+      }
+    ]
+  }
+  
