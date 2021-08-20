@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "uid": "git_issue",
+    "title": "Git issue",
+    "description": "This task is used when the user use stum that in the command line ",
+    "url": "https://raw.githubusercontent.com/stum-inc/ontology/master/tech/fromGitIssue/git_issue.json"
+  },
+  "Input_data": [{
+      "type": "git_url",
+      "description": "An url that point toward a git repository ",
+      "QA": "",
+      "Example": "https://github.com/stum-inc/ontology"
+    },
+    {
+      "type": "git_issue_branch",
+      "description": "Branch where the code should be added",
+      "QA": "",
+      "Example": ""
+    },
+    {
+      "type": "git_issue_description",
+      "description": "What to do in the code",
+      "QA": "",
+      "Example": ""
+    }
+  ],
+  "Output_data": [{
+      "type": "git_url",
+      "description": "An url that point toward a git repository ",
+      "QA": "",
+      "Example": "https://github.com/stum-inc/ontology"
+    },
+    {
+      "type": "git_issue_branch",
+      "description": "Branch where the code has been added",
+      "QA": "",
+      "Example": ""
+    }
+  ]
+}
